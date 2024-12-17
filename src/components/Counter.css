@@ -1,0 +1,21 @@
+.counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 5px;
+}
+
+.plus,
+.minus {
+  width: 50px;
+  background: coral;
+  border: 2px solid orangered;
+  color: black;
+}
+
+.plus:hover,
+.minus:hover {
+  cursor: pointer;
+  background-color: wheat;
+}
