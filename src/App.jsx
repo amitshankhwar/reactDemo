@@ -10,6 +10,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import NotFound from "./components/NotFound";
 import Navbars from "./components/Navbars";
 import About from "./components/About";
+import Newcomponent from "./components/Newcomponent";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route path="/home" element={<Home />} />
             <Route path="/form" element={<Form />} />
             <Route path="/about" element={<About />} />
+            <Route path="/newcomponent" element={<Newcomponent />} />
           </Route>
           <Route path="/fetch" element={<DataFetch />} />
           <Route path="/navbar" element={<Navbars />} />
