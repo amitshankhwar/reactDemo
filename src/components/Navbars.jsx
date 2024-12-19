@@ -21,7 +21,7 @@ function Navbars() {
               Form
             </Nav.Link>
             <Nav.Link as={Link} to="/newcomponent">
-              newcomponent
+              moredetail
             </Nav.Link>
           </Nav>
         </Container>
