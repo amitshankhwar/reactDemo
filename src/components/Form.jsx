@@ -3,7 +3,12 @@ import "./Form.css";
 import { useNavigate } from "react-router-dom";
 
 const Form = () => {
-  let [user, setUser] = useState({ username: "", email: "", password: "" });
+  let [user, setUser] = useState({
+    username: "",
+    email: "",
+    password: "",
+    cpassword: "",
+  });
 
   const navigate = useNavigate();
 
@@ -66,6 +71,14 @@ const Form = () => {
           placeholder="enter your password"
           onChange={(e) => handleInput(e)}
         />
+        <input
+          name="cpassword"
+          type="password"
+          className="password"
+          placeholder="enter your confirm password"
+          onChange={(e) => handleInput(e)}
+        />
+
         <button onClick={(e) => handleClick(e)} type="submit" className="btn">
           Submit
         </button>
