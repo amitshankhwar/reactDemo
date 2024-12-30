@@ -10,6 +10,11 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import NotFound from "./components/NotFound";
 import Navbars from "./components/Navbars";
 import About from "./components/About";
+import Login from "./components/Login";
+import Parent from "./pages/parent";
+import UseRef from "./components/useRef";
+import UseMemoExample from "./pages/Memo";
+import LazyLoading from "./pages/LazyLoading";
 
 function App() {
   return (
@@ -17,12 +22,23 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Navbars />}>
-            <Route path="/home" element={<Home />} />
+            <Route
+              path="/"
+              element={
+                <Parent>
+                  <Home />
+                </Parent>
+              }
+            />
             <Route path="/form" element={<Form />} />
             <Route path="/about" element={<About />} />
           </Route>
+          <Route path="/login" element={<Login />} />
           <Route path="/fetch" element={<DataFetch />} />
           <Route path="/navbar" element={<Navbars />} />
+          <Route path="/useref" element={<UseRef />} />
+          <Route path="/usememo" element={<UseMemoExample />} />
+          <Route path="/lazyLoading" element={<LazyLoading />} />
           <Route path="/*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
