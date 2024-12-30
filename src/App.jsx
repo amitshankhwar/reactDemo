@@ -10,6 +10,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import NotFound from "./components/NotFound";
 import Navbars from "./components/Navbars";
 import About from "./components/About";
+import Newcomponent from "./components/Newcomponent";
 import Login from "./components/Login";
 import Parent from "./pages/parent";
 import UseRef from "./components/useRef";
@@ -32,6 +33,7 @@ function App() {
             />
             <Route path="/form" element={<Form />} />
             <Route path="/about" element={<About />} />
+            <Route path="/newcomponent" element={<Newcomponent />} />
           </Route>
           <Route path="/login" element={<Login />} />
           <Route path="/fetch" element={<DataFetch />} />
